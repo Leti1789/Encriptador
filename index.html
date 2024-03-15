@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encryptor</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+  <div class="contenedor">
+
+    <header class="encabezado">
+      
+        <img src="img/Logo1.png" alt="logo alura">
+        <span>Text encryptor</span>
+
+    </header>
+  
+    <main class="mainSection">
+      <div class="inputText">
+        <textarea class="text" name="text"  id="textUsuario" cols="80" rows="19" placeholder="Enter text here"></textarea>
+      </div>
+          <div class="clarificationCont">
+            <img src="img/exclamacion.png" alt="signo de exclamacion">
+            Only lowercase letters and no accents
+          </div>
+          <div class="buttons">
+            <button onclick="fnEncrypt()" class="btnEncryptor">Encrypt</button>
+            <button onclick="fnDecrypt()" class="btnDecryptor">Decrypt</button>
+          </div>
+      </main>
+      
+        <aside class="messageSection">
+          <div class="areaMensaje">
+            <img class="muñeco" src="img/Muñeco.png" alt="">
+            <h2>No message was found!</h2>
+            <p>Enter the text you want to encrypt or decrypt</p>
+          </div>
+          <div class="areaMensajeSwitch">
+              <div class="messageOutput">
+                
+              </div>
+            <button onclick="copyText()" class="btnCopy" >Copy</button>
+          </div>
+        </aside>
+      
+      <footer class="contentFooter">
+
+        <p>&copy; Copyright  Leticia A. Dimotta - 2024  </p> 
+        <span><a href="https://github.com/Leti1789" target="_blank"><img class="img" src="img/github.png" alt=""></a></span>
+        <span><a href="https://www.linkedin.com/in/leticiadimotta/" target="_blank"><img class="img" src="img/linkedin.png" alt=""></a></span>
+
+      </footer>
+      
+  </div>
+<script src="./index.js"></script>
+</body>
+</html>
